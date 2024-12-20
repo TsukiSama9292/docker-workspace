@@ -24,7 +24,7 @@ jobs:
 
     - name: Build the Docker image
       run: |
-        docker build -t tsukisama9292/ubuntu-jammy-dind:1.16.0-latest .
+        docker build --pull --no-cache -t tsukisama9292/ubuntu-jammy-dind:1.16.0-latest .
 
     - name: Push the Docker image to Docker Hub
       run: |
